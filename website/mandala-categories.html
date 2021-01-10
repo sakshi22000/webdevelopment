@@ -145,6 +145,33 @@
 }
 
 /*End home page*/
+/*MANDALA CATEGORIES PAGE*/
+.category-tile{
+  position:relative;
+  border:2px solid red;
+  overflow:hidden;
+  width:200px;
+  height:200px;
+  margin:0 auto 15px;
+}
+.category-tile span{
+  position:absolute;
+  bottom:0;
+  right:0;
+  width:100%;
+  text-align: center;
+  font-size:1.2em;
+  text-transform: uppercase;
+  background-color: #000;
+  color:#fff;
+  opacity:.8;
+}
+.category-tile:hover{
+  box-shadow:0 1p 5px 1px #cccccc;
+}
+#mandala-categories-tile +div{
+  margin-bottom: 50px;
+}
 
 /********** Large devices only **********/
 @media (min-width: 1200px) {
@@ -236,7 +263,7 @@
 @media (min-width: 992px) and (max-width: 1199px) {
   /*Header*/
   #logo-img {
-  background: url('../images/logo.jpg') no-repeat;
+  background: url('../images/logo1.jpg') no-repeat;
   width: 100px;
   height: 100px;
   margin: 5px 5px 5px 0;
@@ -357,6 +384,15 @@
     width: 280px;
     margin: 0 auto 15px;
   }
+  .col-xxs-12{
+    position: relative;
+    min-height:1px;
+    padding-right: 15px;
+    padding-left: 15px;
+    float:left;
+    width:100%;
+
+  }
 }
 </style>
   <header>
@@ -385,7 +421,7 @@
 
         <div id="collapsable-nav" class="collapse navbar-collapse">
            <ul id="nav-list" class="nav navbar-nav navbar-right">
-            <li>
+            <li class="active">
               <a href="menu.html">
                 <span ><svg xmlns="http://www.w3.org/2000/svg" width="50" height="30" fill="currentColor" class="bi bi-house-fill" viewBox="0 0 16 16">
   <path fill-rule="evenodd" d="M8 3.293l6 6V13.5a1.5 1.5 0 0 1-1.5 1.5h-9A1.5 1.5 0 0 1 2 13.5V9.293l6-6zm5-.793V6l-2-2V2.5a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5z"/>
@@ -425,8 +461,58 @@
   <div id="xs-deliver" class="text-center visible-xs">*contact</div>
   <div id="main-content" class="container">
     <h2 id="mandala-categories-title" class="text-center">Mandala Categories</h2>
-    <div class="text-center">Traditionally, a mandala is a geometric design or pattern that represents the cosmos or deities in various heavenly worlds.
+    <div class="text-center"style="font-size:25px">Traditionally, a mandala is a geometric design or pattern that represents the cosmos or deities in various heavenly worlds.
     </div>
+    <section class="row">
+      <div class="col-md-3 col-sm-4 col-xs-6 col-xxs-12">
+        <a href="single-category.html">
+          <div class="category-tile">
+            <img width="300" height="300" src="images/mandala/Flower.jpg" alt="Flower">
+            <span>Flower</span>
+          </div>
+        </a>
+      </div>
+      <div class="col-md-3 col-sm-4 col-xs-6 col-xxs-12">
+        <a href="single-category.html">
+          <div class="category-tile">
+            <img width="300" height="300" src="images/mandala/moon.jpg" alt="Moon">
+            <span>Moon</span>
+          </div>
+        </a>
+      </div>
+      <div class="col-md-3 col-sm-4 col-xs-6 col-xxs-12">
+        <a href="single-category.html">
+          <div class="category-tile">
+            <img width="300" height="300" src="images/mandala/cartoon-mandala.jpg" alt="Flower">
+            <span>Cartoon</span>
+          </div>
+        </a>
+      </div>
+      <div class="col-md-3 col-sm-4 col-xs-6 col-xxs-12">
+        <a href="single-category.html">
+          <div class="category-tile">
+            <img width="300" height="300" src="images/mandala/girl.jpg" alt="Girl">
+            <span>Girl</span>
+          </div>
+        </a>
+      </div>
+      <div class="col-md-3 col-sm-4 col-xs-6 col-xxs-12">
+        <a href="single-category.html">
+          <div class="category-tile">
+            <img width="300" height="300" src="images/mandala/god.jpg" alt="God">
+            <span>God</span>
+          </div>
+        </a>
+      </div>
+      <div class="col-md-3 col-sm-4 col-xs-6 col-xxs-12">
+        <a href="single-category.html">
+          <div class="category-tile">
+            <img width="300" height="300" src="images/mandala/animal.jpg" alt="Animal">
+            <span>Animal</span>
+          </div>
+        </a>
+      </div>
+
   </div>
   <footer class="panel-footer">
     <div class="container">
